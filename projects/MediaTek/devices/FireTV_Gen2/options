@@ -1,0 +1,14 @@
+cat << 'EOF' > projects/MediaTek/devices/FireTV_Gen2/options
+# Fire TV Gen 2 Target Architecture Options
+ARCH="arm"
+CPU="cortex-a72"
+FPU="neon-vfpv4"
+KERNEL_ARCH="arm"
+
+# Graphics & Display Drivers
+GRAPHIC_DRIVERS="mali"
+MALI_TYPE="midgard"
+
+# Boot configuration
+BOOTLOADER="kexec"
+EOF
